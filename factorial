@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String args[]) {
+        int a = 1;
+        int n;
+        int i;
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();  // Corrected nextInt() method
+
+        for (i = 1; i <= n; i++) {
+            a = a * i;  // Fixed the multiplication logic
+            System.out.println(a);  // Corrected println() method
+        }
+    }
+}
