@@ -1,0 +1,27 @@
+//add first and last and middle in lists//
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    LinkedList<String>ll=new LinkedList<String>();
+	    Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+	    sc.nextLine();
+	    for(int i=0;i<n;i++){
+	        String j=sc.nextLine();
+	        ll.add(j);
+	    }
+	    String g=sc.nextLine();
+	    ll.addFirst(g);
+	    String h=sc.nextLine();
+	    ll.addLast(h);
+	     
+	     String l=sc.nextLine();
+	     int b=ll.indexOf(l);
+	     ll.set(b,"NANI");
+	    
+	    for(int i=0;i<ll.size();i++){
+	        System.out.println(ll.get(i));
+	    }
+	    }
+}
