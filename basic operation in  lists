@@ -1,0 +1,42 @@
+//basic operations in list//
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    ArrayList<Integer>arr=new ArrayList<Integer>();
+	    Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+	    for(int i=0;i<n;i++){
+	        int j=sc.nextInt();
+	        arr.add(j);
+	    }
+	    for(int i=0;i<n;i++){
+	    System.out.println(arr.get(i));
+	    }
+	    
+	    System.out.println("enter element to be removed");
+	    int k=sc.nextInt();
+	    int z=arr.indexOf(k);
+	    if(z!=-1)
+	    arr.remove(z);
+	    
+	    
+	    for(int i=0;i<arr.size();i++){
+	    System.out.println(arr.get(i));
+	    }
+	    
+	    
+	    System.out.println("enter elemnt to be updated with 20");
+	    int f=sc.nextInt();
+	    int c=arr.indexOf(f);
+	    if(arr.contains(f)){
+	        arr.set(c,20);
+	    }
+	    System.out.println("final array");
+	    for(int i=0;i<arr.size();i++){
+	        System.out.println(arr.get(i));
+	    }
+	    
+	}
+	
+}
