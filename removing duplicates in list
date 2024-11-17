@@ -1,0 +1,29 @@
+//removing duplicates in lists//
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    ArrayList<Integer>arr=new ArrayList<Integer>();
+	    Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+	    
+	    for(int i=0;i<n;i++){
+	        int j=sc.nextInt();
+	        arr.add(j);
+	    }
+	    
+	    for(int i=0;i<arr.size();i++){
+	        for(int j=i+1;j<arr.size();j++){
+	            if(arr.get(i)==arr.get(j)){
+	                arr.remove(j);
+	                j--;
+	            }
+	            
+	        }
+	    }
+	    
+	    for(int i:arr){
+	        System.out.println(i);
+	    }
+	}
+}
