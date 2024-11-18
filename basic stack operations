@@ -1,0 +1,20 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Stack<Integer>arr=new Stack<Integer>();
+		arr.push(1);
+		arr.push(2);
+		arr.push(3);
+		arr.push(4);
+		arr.pop();
+		
+		for(int i:arr){
+		    System.out.println(i);
+		}
+		System.out.println(arr.set(2,100));
+		System.out.println(arr.contains(4));
+		System.out.println(arr.indexOf(2));
+		System.out.println(arr.peek());
+	}
+}
