@@ -1,0 +1,16 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		PriorityQueue<Integer> arr=new PriorityQueue<Integer>();
+		arr.add(200000);
+		arr.add(3000);
+		arr.add(400000);
+		arr.add(40);
+		arr.remove();
+		for(int i:arr){
+		    System.out.println(i);
+		}
+		
+	}
+}
