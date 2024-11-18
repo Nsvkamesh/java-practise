@@ -1,0 +1,17 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		ArrayDeque<Integer> arr=new ArrayDeque<Integer>();
+		arr.addFirst(200000);
+		arr.addLast(3000);
+		arr.add(400000);
+		arr.add(40);
+		arr.removeFirst();
+		arr.removeLast();
+		for(int i:arr){
+		    System.out.println(i);
+		}
+		
+	}
+}
