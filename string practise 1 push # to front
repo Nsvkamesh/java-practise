@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    ArrayDeque<Character>arr=new ArrayDeque<Character>();
+	    ArrayDeque<Character>arr1=new ArrayDeque<Character>();
+	    
+	    int n=sc.nextInt();
+	    for(int i=0;i<n;i++){
+	        char c=sc.next().charAt(0);
+	        arr.add(c);
+	    }
+	    for(char c:arr){
+	        if(c=='#'){
+	            arr1.addFirst(c);
+	        }
+	        else{
+	            arr1.add(c);
+	    }
+	    }
+	    System.out.println("ans:");
+	    for(char c:arr1){
+	        System.out.println(c);
+	    }
+	
+}
+}
