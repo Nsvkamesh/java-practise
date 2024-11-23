@@ -1,0 +1,40 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    int count=0;
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("enter rows");
+	    int n=sc.nextInt();
+	    System.out.println("enter columns");
+	    int m=sc.nextInt();
+	    int[][]arr=new int[m][m];
+	    int[][]arr1=new int[m][m];
+	    System.out.println("enter 1st matrix elements:");
+	    for(int i=0;i<n;i++){
+	        for(int j=0;j<m;j++){
+	            arr[i][j]=sc.nextInt();
+	        }
+	    }
+	    System.out.println("enter 2nd matrix elements:");
+	    for(int i=0;i<n;i++){
+	        for(int j=0;j<m;j++){
+	            arr1[i][j]=sc.nextInt();
+	        }
+	    }
+	    for(int i=0;i<n;i++){
+	        for(int j=0;j<m;j++){
+	            if(arr[i][j]==arr1[i][j]){
+	               count++;
+	            }
+	            else{
+	            System.out.println("not equal");
+	            break;
+	        }
+	        }
+	    }
+	    if(count==n*m){
+	        System.out.println("equal");
+	    }
+}
+}
