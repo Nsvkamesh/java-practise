@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	int n=sc.nextInt();
+	int j=n;
+	int count=0;
+	while(n!=0){
+	    int m=n%10;
+	    count++;
+	    n=n/10;
+	}
+	n=j;
+	double temp=0;
+	while(n!=0){
+	    int g=n%10;
+	    temp=Math.pow(g,count)+temp;
+	    n=n/10;
+	}
+	n=j;
+	if(temp==n){
+	    System.out.println("yes");
+	}
+	else
+	System.out.println("no");
+	}
+}
