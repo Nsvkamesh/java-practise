@@ -1,0 +1,59 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+        int[]arr=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        int sum=0;
+		for(int i=0;i<arr.length;i++){
+		     sum=arr[i]+sum;
+		}
+		System.out.println("the sum of array elements  is"+sum);
+		int y=0;
+		
+		if(sum%2==0){
+		int[][]even=new int[3][3];
+		
+		for(int i=0;i<even.length;i++){
+		    for(int j=0;j<even.length;j++){
+		     y=sum+2;
+		    even[i][j]=y;
+		    sum=y;
+		}
+		}
+		System.out.println(Arrays.deepToString(even));
+		}
+		
+		int x=0;
+		
+		if(sum%2!=0){
+		int[][]odd=new int[3][3];
+		int[][]odd1=new int[3][3];
+		
+		for(int i=0;i<odd.length;i++){
+		    for(int j=0;j<odd.length;j++){
+		     x=sum+1;
+		    odd[i][j]=x;
+		    sum=x;
+		}
+		}
+		System.out.println(Arrays.deepToString(odd));
+		for(int i=0;i<odd.length;i++){
+		    for(int j=0;j<odd.length;j++){
+		        odd1[j][i]=odd[i][j];
+		    }
+		}
+		System.out.println("the 90degree rotation of matrix is:");
+		for(int i=0;i<odd1.length;i++){
+		    for(int j=odd1.length-1;j>=0;j--){
+		        System.out.print(" "+odd1[i][j]);
+		    }
+		    System.out.println();
+		}
+		}
+	}
+}
